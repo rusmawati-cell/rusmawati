@@ -1,0 +1,70 @@
+:root {
+    --warna-utama: #0dfdb5;
+    --warna-gelap: #0b2545;
+  }
+  
+  body {
+    font-family: "Segoe UI", system-ui, sans-serif;
+    background-color: #f5f8fc;
+    color: #1f2937;
+  }
+  
+  .navbar-brand { font-weight: 700; letter-spacing: .3px; }
+  
+  .hero {
+    background: linear-gradient(135deg, var(--warna-gelap), var(--warna-utama));
+    color: #fff;
+    padding: 110px 0 90px;
+  }
+  .hero h1 { font-weight: 800; }
+  .hero .ikon-besar { font-size: 9rem; opacity: .85; }
+  
+  .judul-bagian { font-weight: 700; color: var(--warna-gelap); }
+  .garis-judul {
+    width: 70px; height: 4px; background: var(--warna-utama);
+    border-radius: 4px; margin: 8px auto 32px;
+  }
+  
+  .kartu-info {
+    border: none;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, .07);
+    transition: transform .2s, box-shadow .2s;
+    height: 100%;
+  }
+  .kartu-info:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, .14);
+  }
+  .ikon-kartu {
+    font-size: 2.6rem;
+    color: var(--warna-utama);
+  }
+  
+  .banner-detail {
+    background: linear-gradient(135deg, var(--warna-gelap), var(--warna-utama));
+    color: #fff;
+    border-radius: 16px;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  .banner-detail i { font-size: 5rem; }
+  
+  .kotak-form {
+    max-width: 440px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, .12);
+    padding: 32px;
+  }
+  
+  footer {
+    background: var(--warna-gelap);
+    color: #cbd5e1;
+  }
+  footer a { color: #fff; text-decoration: none; }
+  
+  @media (max-width: 576px) {
+    .hero { padding: 70px 0 60px; }
+    .hero .ikon-besar { font-size: 6rem; }
+  }
